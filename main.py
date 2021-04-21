@@ -4,7 +4,6 @@ from riotwatcher import LolWatcher, ApiError
 import pandas as pd
 from dotenv import load_dotenv, find_dotenv
 
-#Git hub Testing
 load_dotenv(find_dotenv())
 
 client = discord.Client()
