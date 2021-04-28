@@ -27,6 +27,10 @@ async def on_message(message):
         username = username.replace(' ', '')
         link = "https://na.op.gg/summoner/userName="+ username 
         my_ranked_stats = watcher.league.by_summoner(my_region, me['id'])
+        matches = watcher.champion_mastery.by_summoner(my_region, me['id'])
+        print(matches)
+        teststats= watcher.champion.rotations(my_region)
+        #print(teststats)
         
         embed = discord.Embed(
         title = my_ranked_stats[0]['summonerName'],
